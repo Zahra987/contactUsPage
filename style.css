@@ -87,16 +87,56 @@ textarea{
 .textarea-field{
   display: flex;
   flex-direction: column;
-  margin-bottom:15px;
 }
-form[name="contactUs-form-box"] button{
+ button{
   padding: 7px 17px;
   border-radius: 12px;
   border: none;
   margin-bottom: 30px;
+  margin-top:15px;
   background-color: green;
   font-size: 0.9em;
 }
+/* up to date form style */
+.uoToDate-form-box{
+  width: 100vw;
+  background-color: rgb(250, 175, 36);
+  margin-top: 25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form[name="upToDate-form-box"]{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin: 25px auto;
+  width: 90vw;
+  background-color: #fff;
+  border-radius: 12px;
+}
+form[name="upToDate-form-box"] p{
+  text-align: center;
+  width:50%;
+
+}
+.input-btn-container{
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.input-btn-container input{
+  
+}
+
+
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -105,7 +145,7 @@ form[name="contactUs-form-box"] button{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  form[name="contactUs-form-box"]{
+  form{
     width:85vw;
   }
 }
@@ -116,17 +156,29 @@ form[name="contactUs-form-box"] button{
     flex-direction: row;
     justify-content:space-between;
   }
-  form[name="contactUs-form-box"]{
+  form{
     width:80vw;
   }
   .input-field:first-child{
     margin-right: 20px;
   }
+  .input-btn-container input{
+    width: 50%;
+  }
+  .input-btn-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 30px;
+  }
+  form[name="upToDate-form-box"] button{
+    margin: 0 0 0 20px;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  form[name="contactUs-form-box"]{
+  form{
     width:70vw;
   }
   
