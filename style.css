@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(237, 239, 213);
+  background-color: rgb(247, 236, 183);
   font-family:'Poppins' , sans-serif;
   font-size: 14px;
 }
@@ -25,4 +25,91 @@ a:last-child{
   align-items: center;
   justify-content: center;
   margin-top: 25px;
+}
+form[name="contactUs-form-box"]{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 90vw;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+form[name="contactUs-form-box"] p{
+  text-align: center;
+  width:50%;
+}
+form[name="contactUs-form-box"] .inputs{
+  display: flex;
+  width:80%;
+  align-items: center;
+  justify-content:space-between;
+}
+h2{
+  padding-top: 15px;
+  padding-bottom:15px;
+}
+.inputs{
+  display: flex;
+  flex-direction:column;
+  min-width: 100%;
+  margin-top: 20px;
+}
+input{
+  border:none;
+  outline: none;
+  border: 2px solid rgb(75, 74, 74);
+  border-radius: 9px;
+  height: 30px;
+  padding-left: 10px;
+}
+.input-group{
+  width: 100%;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 10px;
+}
+textarea{
+  border: none;
+  outline: none;
+  border-radius: 9px;
+  border: 2px solid rgb(75, 74, 74);
+}
+.textarea-field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom:10px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .inputs{
+    flex-direction: row;
+    justify-content:space-between;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
