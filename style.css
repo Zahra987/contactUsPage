@@ -1,0 +1,28 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(237, 239, 213);
+  font-family:'Poppins' , sans-serif;
+  font-size: 14px;
+}
+a{
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  margin-left: 27px;
+}
+a:hover{
+  cursor: pointer;
+}
+a:last-child{
+  color: rgb(196, 196, 4);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
