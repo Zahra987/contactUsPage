@@ -130,9 +130,60 @@ form[name="upToDate-form-box"] p{
   align-items: center;
   margin-top: 20px;
 }
-.input-btn-container input{
-  
+/* ourContact style*/
+.ourContact{
+  width:90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #fff;
+  margin-top: 25px;
+  padding-left: 20px;
+  border-radius: 12px;
 }
+.ourContact-left{
+  margin: 20px;
+}
+.businessLunch{
+  width:110px;
+  height:110px;
+  background-color: rgb(135, 237, 26);
+  border-radius:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.businessLunch p{
+  text-align: center;
+  width:50%;
+  margin-top: 5px;
+  font-size: 0.6em;
+}
+.adress-box{
+  display: flex;
+  margin: 20px;
+  align-items:center;
+}
+.adress-box p{
+  margin-bottom: 5px;
+}
+.adress-box a{
+  margin-left: 0;
+}
+.ourContact .icon{
+  width:50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgb(135, 237, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
 
 
 
@@ -174,6 +225,13 @@ form[name="upToDate-form-box"] p{
   form[name="upToDate-form-box"] button{
     margin: 0 0 0 20px;
   }
+  .ourContact{
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -181,7 +239,6 @@ form[name="upToDate-form-box"] p{
   form{
     width:70vw;
   }
-  
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
