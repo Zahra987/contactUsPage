@@ -194,6 +194,11 @@ footer{
   justify-content:center;
   align-items: center;
 }
+.errBox{
+  font-size: 0.8em;
+  margin-top: 5px;
+  color: red;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

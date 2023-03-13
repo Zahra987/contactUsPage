@@ -22,7 +22,7 @@
     </header>
     <section>
       <div class="contactUs-form-box">
-        <form name="contactUs-form-box" action="#">
+        <form name="contactUs-form-box" action="#" onsubmit="return contactUsValidation()" novalidate>
           <h2>Contact Us</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quas adipisci et,
             molestias dicta incidunt, architecto, qui vitae
@@ -31,16 +31,19 @@
               <div class="inputs">
                 <div class="input-field">
                   <label>email</label>
-                  <input type="text" name="email" placeholder="email"/>
+                  <input type="text" name="femail" placeholder="email"/>
+                  <div id="emailErr" class="errBox"></div>
                 </div>
                 <div class="input-field">
                   <label>name</label>
-                  <input type="text" name="name" placeholder="name"/>
+                  <input type="text" name="fname" placeholder="name"/>
+                  <div id="nameErr" class="errBox"></div>
                 </div>
               </div>
               <div class="textarea-field">
                 <label> message</label>
-                <textarea type="text" name="message"></textarea>
+                <textarea type="text" name="fmessage"></textarea>
+                <div id="messageErr" class="errBox"></div>
               </div>
             </div>
           <button>SUBMIT</button>
