@@ -204,6 +204,13 @@ footer{
   margin-top: 5px;
   color: red;
 }
+.ourContact-left h1{
+ margin-top: 10px;
+}
+.ourContact-left button{
+  margin-left: 20px;
+  background-color: rgb(214, 214, 40);
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
