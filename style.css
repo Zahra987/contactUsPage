@@ -120,7 +120,7 @@ form[name="upToDate-form-box"]{
 form[name="upToDate-form-box"] p{
   text-align: center;
   width:50%;
-
+  color: rgb(25, 25, 25);
 }
 .input-btn-container{
   display: flex;
@@ -183,11 +183,17 @@ form[name="upToDate-form-box"] p{
   align-items: center;
   margin-right: 10px;
 }
-
-
-
-
-
+/* footer style*/
+footer{
+  margin-top: 25px;
+  background-color: rgb(54, 54, 54);
+  width: 100vw;
+  height:45px;
+  color:white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
