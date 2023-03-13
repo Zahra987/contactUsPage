@@ -94,8 +94,13 @@ textarea{
   border: none;
   margin-bottom: 30px;
   margin-top:15px;
-  background-color: green;
+  background-color: rgb(94, 194, 94);
   font-size: 0.9em;
+  transition: background-color 0.5s ease;
+}
+button:hover{
+  cursor:pointer;
+  background-color: rgb(47, 120, 47);
 }
 /* up to date form style */
 .uoToDate-form-box{
