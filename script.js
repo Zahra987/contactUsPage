@@ -1,6 +1,7 @@
 var emailErr = document.getElementById("emailErr");
 var nameErr = document.getElementById('nameErr');
-var messageErr = document.getElementById('messageErr')
+var messageErr = document.getElementById('messageErr');
+var upToDateErr = document.getElementById("upToDateErr");
 
 function contactUsValidation(){
  emailErr.innerHTML="";
@@ -23,8 +24,19 @@ function contactUsValidation(){
 }
   //validation for message
   let charLength= document.forms['contactUs-form-box']['fmessage'].value.length;
-  if (charLength > 50 || charLength < 2 ) {
+  if (charLength > 50 || charLength < 3 ) {
     messageErr.innerHTML="Maximum 50 characters!";
     return false;
   }
+  return true;
+}
+
+function upToDateFormValidation() {
+  upToDateErr.innerHTML="";
+  var length=document.forms['upToDate-form-box']['uptodate'].value.length;
+  if (length < 3 || length > 20) {
+    upToDateErr.innerHTML="at least 3 characters!";
+    return false;
+  }
+  return true;
 }
