@@ -26,7 +26,7 @@ a:last-child{
   justify-content: center;
   margin-top: 25px;
 }
-form[name="contactUs-form-box"]{
+form[name="contactUsForm"]{
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -36,11 +36,11 @@ form[name="contactUs-form-box"]{
   border-radius: 12px;
   margin-top: 25px;
 }
-form[name="contactUs-form-box"] p{
+form[name="contactUsForm"] p{
   text-align: center;
   width:50%;
 }
-form[name="contactUs-form-box"] .inputs{
+form[name="contactUsForm"] .inputs{
   display: flex;
   width:80%;
   align-items: center;
@@ -112,7 +112,7 @@ button:hover{
   align-items: center;
 }
 
-form[name="upToDate-form-box"]{
+form[name="upToDateForm"]{
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -122,7 +122,7 @@ form[name="upToDate-form-box"]{
   background-color: #fff;
   border-radius: 12px;
 }
-form[name="upToDate-form-box"] p{
+form[name="upToDateForm"] p{
   text-align: center;
   width:50%;
   color: rgb(25, 25, 25);
