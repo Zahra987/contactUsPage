@@ -16,9 +16,6 @@ a{
 a:hover{
   cursor: pointer;
 }
-a:last-child{
-  color: rgb(196, 196, 4);
-}
 .container{
   display: flex;
   flex-direction: column;
