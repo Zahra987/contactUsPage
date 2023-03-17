@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="../app.css"/>
   <link rel="shortcut icon" href="#" />
   <title>home</title>
 </head>
@@ -15,8 +15,8 @@
         <div class="navbar">
           <a class="navLink" href="#">MENU</a>
           <a class="navLink" href="./home.html" id="home">HOME</a>
-          <a class="navLink" href="./about.html">ABOUT</a>
-          <a class="navLink" href="./contactUs.html">CONTACTUS</a>
+          <a class="navLink" href="../about/about.html">ABOUT</a>
+          <a class="navLink" href="../contactUs/contactUs.html">CONTACTUS</a>
         </div>
       </nav>
     </header>
@@ -25,17 +25,6 @@
       <p>Lorem ipsum dolor sit amet consectetur</p>
     </footer>
   </div>
-  <script>
-    var navLinks=document.getElementsByClassName('navLink');
-    var nanLinkList=Object.values(navLinks);
-    var link=document.getElementById('home');
-    nanLinkList.map((item) => {
-       if (item==link){
-        item.style.color="rgb(196, 196, 4)";
-       }else{
-        item.style.color="black";
-       }
-      })
-  </script>
+  <script src="./home.js"></script>
 </body>
 </html>
