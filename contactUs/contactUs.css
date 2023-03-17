@@ -166,17 +166,6 @@ form[name="upToDateForm"] p{
   align-items: center;
   margin-right: 10px;
 }
-/* footer style*/
-footer{
-  margin-top: 25px;
-  background-color: rgb(54, 54, 54);
-  width: 100vw;
-  height:45px;
-  color:white;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-}
 .errBox{
   font-size: 0.8em;
   margin-top: 5px;
