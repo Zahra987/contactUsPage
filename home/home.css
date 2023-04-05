@@ -14,26 +14,35 @@
   align-items:center;
 }
 .gallery .container>div:hover .details{
-  display:visible;
   display:flex;
   justify-content:center;
   align-items:center;
   border-radius: 5px;
+  display:visible;
+  z-index: 1;
+  transform:  rotatex(0) ;
+  font-size:smaller;
+  border-radius: 10%;
+  transition: all 0.8s ease;
 }
 
 .gallery .container>div .details{
   position:absolute;
-  background-color: aqua;
-  width:75%;
-  height:75%;
-  z-index: 1;
-  display:none;
+  background-color: rgba(224, 232, 232,0.9);
+  width:80%;
+  height:80%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index: -1;
+  transition: all 0.5s ease;
+  transform:  rotatex(90deg) skew(45deg) ;
+  
 }
 .gallery .container>div img{
   width: 100%;
   height:100%;
   border-radius: 5px;
-  z-index: -1;
 }
 .gallery .container>div:hover{
   cursor:pointer;
