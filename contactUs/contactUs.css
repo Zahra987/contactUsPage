@@ -4,6 +4,9 @@ header{
   display: flex;
   justify-content: center;
 }
+body{
+  overflow-x: hidden;
+}
 form[name="contactUsForm"]{
   display: flex;
   flex-direction: column;
