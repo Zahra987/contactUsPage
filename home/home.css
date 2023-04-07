@@ -1,10 +1,68 @@
+body{
+  overflow-x: hidden;
+  display: flex;
+  justify-content:center;
+}
+
+.details-container{
+ width: 80%;
+ height:85vh;
+ background-color: hsl(180, 23%, 95%);
+ z-index: 10;
+ border-radius: 10px;
+ position: fixed;
+ top: 50px;
+ visibility: hidden;
+}
+.details-container .close{
+  font-size: 30px;
+  color: rgb(222, 58, 58);
+  margin-top: 5px;
+  margin-left:5px;
+}
+.details-container .close:hover{
+  cursor: pointer;
+}
+.details-bg{
+  position: fixed;
+  top:0;
+  z-index: 1;
+  width: 100%;
+  height:100%;
+  background-color: rgba(41, 39, 39, 0.7);
+  visibility: hidden;
+}
+.details-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.details-img-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.details-img-box img{
+  width: 80%;
+}
+.details-text-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  font-size:18px;
+  margin-top:20px;
+  line-height: 30px;
+}
 .gallery{
   width: 80%;
+  position: relative;
 }
 .gallery .container{
   display:grid;
   grid-template-columns: repeat(auto-fit,250px);
-  grid-auto-rows: 156px;
+  grid-auto-rows: 157px;
   gap: 2px;
 }
 .gallery .container>div {
@@ -29,14 +87,14 @@
 .gallery .container>div .details{
   position:absolute;
   background-color: rgba(224, 232, 232,0.9);
-  width:80%;
-  height:80%;
+  width:70%;
+  height:70%;
   display: flex;
   justify-content:center;
   align-items:center;
   z-index: -1;
   transition: all 0.5s ease;
-  transform:  rotatex(90deg) skew(45deg) ;
+  transform:  rotatex(90deg) skew(40deg) ;
   
 }
 .gallery .container>div img{
@@ -46,4 +104,43 @@
 }
 .gallery .container>div:hover{
   cursor:pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .details-img-box{
+    width:70%;
+  }
+  .details-container{
+    height:75vh;
+  }
+  .details-box{
+    display: flex;
+    flex-direction:row;
+    justify-content: start;
+    align-items:center;
+  }
+  .details-text-box{
+    align-items:start;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
